@@ -33,19 +33,23 @@ int DemDuong(int a[], int n){
 }
 int KiemTraAm(int a[], int n){
 	if(DemDuong(a,n) !=0 )
-		printf("\nKhong thoa man");
+		return -1;
 	else
-		printf("\nThoa man");
+		return 1;
+		
+	return KiemTraAm(a,n);
 }
-int main() {
-  	int n;
-  	int a[max];
-  	n = nhapsonguyen();
-  	
-  	nhapmang(a,n);
-  	printf("\n mang sau khi nhap la: \n");
- 	xuatmang(a,n);
-  	
+int main(){
+	int n;
+	int a[max];
+	n=nhapsonguyen();
+	nhapmang(a,n);
+	printf("mang sau khi nhap la: \n");
+	xuatmang(a,n);
   	int kq = KiemTraAm(a,n);
+  	if(kq==1)
+  		printf("\n Thoa man");
+  	else 
+  		printf("\n Khong thoa man");
   return 0;
 }
