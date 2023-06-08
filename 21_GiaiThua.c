@@ -1,3 +1,5 @@
+/* 21. Tính T(n) = 1 x 2 x 3 x … x n. */
+
 #include<stdio.h>
 int giaithua(int n){
 	if(n==1)
