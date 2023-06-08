@@ -1,4 +1,4 @@
-/*mang mot chieu so nguyen, dem so nguyen duong torng mang*/
+/*11. Cho mảng 1 chiều các số thực. Viết hàm đếm số lượng giá trị dương trong mảng bằng phương pháp đệ quy*/
 #include<stdio.h>
 
 int demduong(int a[], int n){
