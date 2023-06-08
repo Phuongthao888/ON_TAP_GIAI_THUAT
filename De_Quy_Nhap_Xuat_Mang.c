@@ -1,20 +1,6 @@
+/*12. Cho mảng 1 chiều các số nguyên. Viết hàm đệ quy xuất mảng */
 #include<stdio.h>
-#define max 100
-int nhapsonguyen(){
-	int n;
-	do{
-		printf("nhap n: ");
-		scanf("%d", &n);
-	}while(n<0 ||n>max);
-}
-void nhapmang(int a[], int n, int i=0){
-		if(i == n)
-			return;
 
-		printf("\n Nhap a[%d]= ", i);
-		scanf("%d", &a[i]);
-		nhapmang(a, n, i+1);
-}
 void xuatmang(int a[], int n, int i=0){
 		if(i == n)
 			return;
@@ -24,10 +10,8 @@ void xuatmang(int a[], int n, int i=0){
 }
 
 int main(){
-	int n;
-	int a[max];
-	n = nhapsonguyen();
-	nhapmang(a,n);
-	printf("mang sau khi nhap la: \n");
+	int n=5;
+	int a[5]={44,51,12,3,1};
+	printf("mang la: \n");
 	xuatmang(a,n);
 }
