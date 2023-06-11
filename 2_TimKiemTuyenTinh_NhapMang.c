@@ -14,8 +14,6 @@ int nhapmang(int a[], int n){
 	{
 		printf("nhap phan tu a[%d]: ", i);
 		scanf("%d", &a[i]);
-		if(a[i]==0)
-			return 0;
 	}
 }
 
