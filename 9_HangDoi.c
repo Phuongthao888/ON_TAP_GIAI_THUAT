@@ -1,4 +1,6 @@
 //tham khảo Freetuts
+/*Viết chương trình cài đặt hàng đợi bằng mảng. Nhập vào queue 6 phần tử { 41, 23, 4, 14, 56, 1 }. Sau đó thêm vào phần tử {55} và loại bỏ phần {23}. In hàng đợi sau khi thêm và bỏ.*/
+
 #include<stdio.h>
 int queue[100], n = 100, front = - 1, rear = - 1;
 
