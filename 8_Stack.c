@@ -4,11 +4,6 @@
 
 int top=-1;
 
-void xuat(int a[], int n){
-	for(int i=0; i<n; i++)
-		printf("%3d", a[i]);
-}
-
 bool isfull(int n){
 	if(top>=n-1)
 		return true;
